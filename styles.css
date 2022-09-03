@@ -21,6 +21,12 @@ body{
     background-color: #F9C49A;
 }
 
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
 header{
     width: 100%;
     background-color: #E8E4E1;
@@ -30,7 +36,7 @@ header{
 header > a{
     text-decoration: none;
     text-align: center;
-    font-size: 2.5rem;;
+    font-size: 2.5rem;
     color: #EC823A;
 }
 
@@ -49,6 +55,21 @@ main{
 
 }
 
+.form{
+    width: clamp(30rem,50%,40rem);
+    height: 38rem;
+    background-color: #fff;
+    border-radius: .4rem;
+    z-index: 99;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0px 0px 4px rgb(0, 0, 0, 0.3);
+}
+
 .add_book{
     position: absolute;
     top: 50%;
@@ -61,3 +82,65 @@ main{
     cursor: pointer;
 }
 
+.form{
+    padding: 1rem 2rem;
+}
+
+.form h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #EC823A;
+}
+
+.form .wrapper{
+    width: 80%;
+    margin-top: 2rem;
+    gap: .6rem;
+}
+
+.form input{
+    width: 80%;
+    border: 1px solid rgb(215, 219, 215);
+    outline:none;
+    font-family: sans-serif;
+    padding: .2rem 0;
+}
+
+.form input:focus{
+    border: 1px solid #bbcfff;
+}
+
+::placeholder{
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    padding: 0.3rem;
+}
+
+.form label{
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+.form .drop_down{
+    margin-top: 2rem;
+}
+
+.form select{
+    font-family: sans-serif;
+    outline: none;
+    border: 1px solid rgb(215, 219, 215);
+}
+
+.form option{
+    font-family: sans-serif;
+}
+
+.form .submit{
+    width: 10rem;
+    margin-top: 3.5rem;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: .4rem;
+    cursor: pointer;
+}

@@ -15,6 +15,35 @@
     <main>
         <div class="shelves" id="shelves"></div>
     </main>
+    <form class="form" id="form" action="/" method="GET">
+        <h1>NEW BOOK</h1>
+        
+        <div class="wrapper">
+        <label for="title">Title: </label>
+        <input type="text" name="title" class="title" id="title" placeholder="Book's title">
+        </div>
+
+        <div class="wrapper">
+            <label for="author">Author's Name: </label>
+            <input type="text" name="" class="atuhor" id="author" placeholder="Author's name">
+        </div>
+
+        <div class="wrapper">
+            <label for="numberOfPages">Number of Pages: </label>
+            <input type="number" name="numberOfPages" class="numberOfPages" id="numberOfPages" placeholder="Number of pages">
+        </div>
+
+        <div class="drop_down wrapper">
+            <label for="select">Has this book been read?</label>
+            <select class="select" id="select">
+                <option>Read</option>
+                <option>Yet</option>
+            </select>
+        </div>
+
+        <input type="submit" class="submit" id="submit" value="Submit">
+
+    </form>
     <button class="add_book" id="add_book">Add Book</button>
 
 
