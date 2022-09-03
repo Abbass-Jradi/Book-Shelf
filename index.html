@@ -12,8 +12,7 @@
         <a href="index.html"><h1>Odin's Library</h1></a>
     </header>
 
-    <main>
-        <div class="shelves" id="shelves"></div>
+    <main class="main">
     </main>
     <form class="form" id="form" action="/" method="GET">
         <h1>NEW BOOK</h1>
@@ -36,12 +35,12 @@
         <div class="drop_down wrapper">
             <label for="select">Has this book been read?</label>
             <select class="select" id="select">
-                <option>Read</option>
-                <option>Yet</option>
+                <option value="read">Read</option>
+                <option value="yet">Yet</option>
             </select>
         </div>
 
-        <input type="submit" class="submit" id="submit" value="Submit">
+        <input type="button" class="submit" id="submit" value="Submit">
 
     </form>
     <button class="add_book" id="add_book">Add Book</button>
